@@ -1,0 +1,93 @@
+body{
+    margin:0px;
+}
+header{
+    background-color: #303030;
+}
+#logo{
+    padding-left:40px;
+    padding-bottom:20px;
+}
+main{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50%;
+    text-align: center;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:78px;
+}
+div h2{
+    font-family: Verdana;
+    font-size:30px;
+    color:#265E70;
+    font-weight:normal;
+}
+spam{
+    color:#4DBCE9;
+    
+}
+#moto{
+    background-color: #4dbde9b7;
+    border-radius:15px;
+    margin:0px;
+    padding-left:2px;
+    min-width:440px;
+}
+ul{
+    padding:0px;
+}
+ul li{
+    font-family:verdana;
+    color:white;
+    list-style: none;
+}
+li h1{
+    color:white;
+    font-size:26px;
+}
+li h2{
+    color:white;
+    font-size:26px;
+    margin-bottom: 5px;
+}
+.price{
+    color:#265E70;
+    font-weight:600;
+    font-size:24px;
+    background-color: white;
+    border-radius:15px;
+    margin: 2px 30% 2px 30%;
+    padding: 7px 10px 7px 10px;
+}
+li h3{
+    color:white;
+    font-size:18px;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+#cart{
+    display:flex;
+    column-gap:30px;
+    justify-content: center;
+}
+#cart button{
+    padding:2px;
+    border:none;
+    background-color:transparent;   
+}
+#button button{
+    font-family: verdana;
+    color:white;
+    border-style:none;
+    background-color: #4dbde9a6;
+    border-radius:15px;
+    font-size:26px;
+    padding: 5px 15px 5px 15px;
+}
+.carousel-container{
+    display:flex;
+    max-width:440px;
+    overflow-x:hidden; /*limita o tamanho da div só na horizontal*/
+}
+
