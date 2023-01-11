@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Raleway:wght@700;800&display=swap');
 body{
     margin:0px;
 }
@@ -15,7 +16,7 @@ main{
     text-align: center;
     padding-left:100px;
     padding-right:100px;
-    padding-top:78px;
+    padding-top:70px;
 }
 div h2{
     font-family: Verdana;
@@ -42,11 +43,13 @@ ul li{
     color:white;
     list-style: none;
 }
-li h1{
+.biggerLetter {
     color:white;
     font-size:26px;
+    padding-top: 2rem; 
 }
-li h2{
+
+.mediumLetter{
     color:white;
     font-size:26px;
     margin-bottom: 5px;
@@ -60,7 +63,7 @@ li h2{
     margin: 2px 30% 2px 30%;
     padding: 7px 10px 7px 10px;
 }
-li h3{
+.smallLetter{
     color:white;
     font-size:18px;
     margin-top: 5px;
@@ -74,7 +77,8 @@ li h3{
 #cart button{
     padding:2px;
     border:none;
-    background-color:transparent;   
+    background-color:transparent;
+    border: none;
 }
 #button button{
     font-family: verdana;
@@ -84,10 +88,50 @@ li h3{
     border-radius:15px;
     font-size:26px;
     padding: 5px 15px 5px 15px;
+    cursor:pointer;
+}
+#button button:hover{
+    color:#265E70;
 }
 .carousel-container{
     display:flex;
     max-width:440px;
     overflow-x:hidden; /*limita o tamanho da div só na horizontal*/
 }
+div.cardInformation{
+    font-family:Raleway;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(77, 188, 233, 0.95);
+    width:40%;
+    height:80%;
+    border-radius:15px;
+    margin-left:25%;
+    display:none;
+    
+}
+.cardInformation button{
+    margin-bottom: 10%;
+    margin-top:5%;
+    border-style: none;
+    font-size:18px;
+    width:40%;
+    height:50px;
+    padding-left:5%;
+    padding-right:5%;
+    
+}
+.cardInformation .smallLetter{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.cardInformation #exs{
+    padding-left:90%;
+    padding-top:1rem;
+}
+.cardInformation img{
+    padding-left:10%;
+}
+
 

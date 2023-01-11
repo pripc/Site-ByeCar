@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByeCar</title>
     <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="AutomaticCarousel()">
     <header>
         <img src="images/logo.svg" alt="Logo of DNC school">
         <img id="logo" src="images/companyName.svg" alt="ByeCar Company Name">
     </header>
     <main>
+        <div class="cardInformation">
+            <img onclick="closeWindow(0)" id="exs" src="images/x.svg" alt="">
+            <h1 class="biggerLetter">Scooter Elétrica Voltz EV1</h1>
+            <h3 class="smallLetter">O câmbio de 5 marchas da Scooter Elétrica Voltz EV1 oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!</h3>
+            <img width="350px" src="images/motorcycle.svg" alt="">
+            <button class="price">Quero Assinar</button>
+
+        </div>
+        <div class="cardInformation">
+            <img onclick="closeWindow(1)" id="exs" src="images/x.svg" alt="">
+            <h1 class="biggerLetter">Honda CB 500X</h1>
+            <h3 class="smallLetter">O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!</h3>
+            <img width="452px" src="images/honda.svg" alt="">
+            <button class="price">Quero Assinar</button>
+        </div>
         <div>
             <h2>Ter <strong>uma moto</strong> por asinatura nunca foi tão fácil</h2>
             <img id="woman" src="images/woman.svg" alt="woman driving a motorcycle">
@@ -22,35 +41,39 @@
                 <h2>Conheça nossas <spam><strong>motos</strong></spam>!</h2>
             </div>
             <div id="cart">
-               <button onclick="goBack()">
-                <img width="37px" src="images/leftArrow.svg" alt="">
+               <button>
+                <img onclick="goBack()" width="37px" src="images/leftArrow.svg" alt="">
                </button> 
             <ul class="carousel-container">
                 <li id="moto">
-                    <h1><strong>Scooter Elétrica Voltz EV1</strong></h1>
-                    <img src="images/motorcycle.svg" alt="motocycle image">
-                    <h2>A partir de</h2>
+                    <h1 class="biggerLetter"><strong>Scooter Elétrica Voltz EV1</strong></h1>
+                    <img height="300" src="images/motorcycle.svg" alt="motocycle image">
+                    <h2 class="mediumLetter">A partir de</h2>
                     <p class="price">R$619,90</p>
-                    <h3>Plano de 30 meses</h3>
+                    <h3 class="smallLetter">Plano de 30 meses</h3>
                 </li>
                 <li id="moto">
-                    <h1><strong>Scooter Elétrica Voltz EV1</strong> </h1>
-                    <img src="images/honda.svg" alt="motocycle image">
-                    <h2>A partir de</h2>
+                    <h1 class="biggerLetter"><strong>Scooter Elétrica Voltz EV1</strong> </h1>
+                    <img height="300" width="360" src="images/honda.svg" alt="motocycle image">
+                    <h2 class="mediumLetter">A partir de</h2>
                     <p class="price">R$619,90</p>
-                    <h3>Plano de 30 meses</h3>
+                    <h3 class="smallLetter">Plano de 30 meses</h3>
                 </li>
             </ul>
-            <button onclick="goNext()">
-                <img width="37px" src="images/rightArrow.svg" alt="">
+            <button>
+                <img onclick="goNext()" width="37px" src="images/rightArrow.svg" alt="">
             </button>
             </div>
-        <div id="button">
-            <button>Saiba Mais</button>
-        </div>
+            <div id="button">
+                <button onclick="showCard()">Saiba Mais</button>
+            </div>
                 
         </div>
     </main>
+
     <script src="JS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
